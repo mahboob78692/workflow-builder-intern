@@ -2,10 +2,13 @@
   "name": "workflow-builder-ui",
   "version": "1.0.0",
   "description": "Workflow Builder UI - React TypeScript",
+  "homepage": "https://mahboob78692.github.io/workflow-builder-intern",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,8 +18,8 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.0.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.0.0",
     "vite": "^4.4.0"
   }
 }
-
